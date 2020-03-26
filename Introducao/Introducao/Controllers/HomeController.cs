@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Introducao.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,13 +12,20 @@ namespace Introducao.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
-        }
-        public string Message()
-        {
-            return "Johnny Erick Dockhorn";
-        }
+            var pessoa = new Pessoa()
+            {
+                ID = 1,
+                Name = "Johnny Erick Dockhorn",
+                Type = "Administrador"
+            };
 
+            
+            ViewBag.ID = pessoa.ID;
+            ViewBag.Name = pessoa.Name;
+            ViewBag.Type = pessoa.Type;
+
+            return View(pessoa);
+        }
         public ActionResult Contatos()
         {
             return View();
@@ -41,6 +49,13 @@ namespace Introducao.Controllers
         public ActionResult Store()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Lista(Pessoa pessoa)
+        {
+            
+            return View(pessoa);
         }
     }
 }
