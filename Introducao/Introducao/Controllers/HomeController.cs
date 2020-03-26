@@ -27,5 +27,20 @@ namespace Introducao.Controllers
         {
             return View();
         }
+
+        public ActionResult Adm()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Store()
+        {
+            return View();
+        }
     }
 }
