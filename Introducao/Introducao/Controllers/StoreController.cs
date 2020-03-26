@@ -8,6 +8,7 @@ namespace Introducao.Controllers
 {
     public class StoreController : Controller
     {
+
         // GET: Store
         public ActionResult Loja()
         {
