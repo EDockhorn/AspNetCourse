@@ -13,7 +13,7 @@
 
 <form action="Home/Lista" method="post">
     <fieldset>
-        <legend>Informações de Pessoas</legend>
+        <legend>Informações de Pessoas - Utilizando ViewBag</legend>
     </fieldset>
 
     <div>
@@ -41,3 +41,37 @@
     <p><input type="submit" value="Enviar" /></p>
 
 </form>
+
+<br />
+<br />
+<form action="Home/Listar" method="get">
+    <fieldset>
+        <legend>Informações de Pessoas - Utilizando View Tipada</legend>
+    </fieldset>
+
+    <div>
+        <label for="ID">Código</label>
+
+    </div>
+    <div>
+        <input type="number" value="@Model.ID" name="ID" />
+    </div>
+    <div>
+        <label for="Name">Name</label>
+
+    </div>
+    <div>
+        <input type="text" value="@Model.Name" name="Name" />
+    </div>
+    <div>
+        <label for="Type">Type</label>
+
+    </div>
+    <div>
+        <input type="text" value="@Model.Type" name="Type" />
+    </div>
+
+    <p><input type="submit" value="Enviar" /></p>
+
+</form>
+

@@ -52,9 +52,17 @@ namespace Introducao.Controllers
         }
 
         [HttpPost]
-        public ActionResult Lista(Pessoa pessoa)
+        public ActionResult Lista(int id, string name, string type)
         {
-            
+            ViewBag.ID = id;
+            ViewBag.Name = name;
+            ViewBag.Type = type;
+
+            return View();
+        }
+        [HttpGet]
+        public ActionResult Listar(Pessoa pessoa)
+        {
             return View(pessoa);
         }
     }
