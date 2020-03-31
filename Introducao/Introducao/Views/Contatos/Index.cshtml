@@ -1,0 +1,74 @@
+﻿@model Introducao.Models.Contatos
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Contatos Index</h2>
+
+
+<form action="Contatos/ListaViewBag" method="get">
+    <fieldset>
+        <legend>Informações de Pessoas - Utilizando ViewBag</legend>
+    </fieldset>
+
+    <div>
+        <label for="ID">Código</label>
+
+    </div>
+    <div>
+        <input type="number" value="@ViewBag.ID" name="ID" />
+    </div>
+    <div>
+        <label for="Name">Name</label>
+
+    </div>
+    <div>
+        <input type="text" value="@ViewBag.Name" name="Name" />
+    </div>
+    <div>
+        <label for="Type">Type</label>
+
+    </div>
+    <div>
+        <input type="text" value="@ViewBag.Type" name="Type" />
+    </div>
+
+    <p><input type="submit" value="Enviar" /></p>
+
+</form>
+
+<br />
+<br />
+<br />
+
+
+<form action="Contatos/ListagemTipada" method="get">
+    <fieldset>
+        <legend>Informações de Pessoas - Utilizando Listagem Tipada</legend>
+    </fieldset>
+
+    <div>
+        <label for="ID">Código</label>
+
+    </div>
+    <div>
+        <input type="number" value="@Model.ID" name="ID" />
+    </div>
+    <div>
+        <label for="Name">Name</label>
+
+    </div>
+    <div>
+        <input type="text" value="@Model.NameContact" name="Name" />
+    </div>
+    <div>
+        <label for="Type">Type</label>
+
+    </div>
+    <div>
+        <input type="text" value="@Model.DescriptionContact" name="Type" />
+    </div>
+
+    <p><input type="submit" value="Enviar" /></p>
+
+</form>

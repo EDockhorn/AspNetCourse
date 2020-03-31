@@ -1,8 +1,4 @@
 ﻿using Introducao.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Introducao.Controllers
@@ -19,15 +15,20 @@ namespace Introducao.Controllers
                 Type = "Administrador"
             };
 
-            
-            ViewBag.ID = pessoa.ID;
-            ViewBag.Name = pessoa.Name;
-            ViewBag.Type = pessoa.Type;
+            ViewData["ID"] = 10;
+            ViewData["Name"] = "Erick";
+            ViewData["Type"] = "Descrição";
 
-            return View(pessoa);
+
+            return View();
         }
         public ActionResult Contatos()
         {
+
+            ViewBag.ID = "30";
+            ViewBag.Name = "Geisa Santos Dockhorn";
+            ViewBag.Type = "Tecnologia";
+
             return View();
         }
 
@@ -52,7 +53,17 @@ namespace Introducao.Controllers
         }
 
         [HttpPost]
-        public ActionResult Lista(int id, string name, string type)
+        public ActionResult ListaViewData(int id, string name, string type)
+        {
+            ViewData["ID"] = id;
+            ViewData["Name"] = name;
+            ViewData["Type"] = type;
+
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult ListaViewBag(int id, string name, string type)
         {
             ViewBag.ID = id;
             ViewBag.Name = name;
@@ -60,10 +71,6 @@ namespace Introducao.Controllers
 
             return View();
         }
-        [HttpGet]
-        public ActionResult Listar(Pessoa pessoa)
-        {
-            return View(pessoa);
-        }
+
     }
 }
