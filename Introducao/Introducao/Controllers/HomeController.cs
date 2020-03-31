@@ -20,7 +20,7 @@ namespace Introducao.Controllers
             ViewData["Type"] = "Descrição";
 
 
-            return View();
+            return View(pessoa);
         }
         public ActionResult Contatos()
         {
@@ -72,5 +72,13 @@ namespace Introducao.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Lista(Pessoa pessoa)
+        {
+
+            return View(pessoa);
+        }
+
+  
     }
 }

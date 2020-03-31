@@ -1,4 +1,4 @@
-﻿
+﻿@model Introducao.Models.Pessoa
 
 @{
     ViewBag.Title = "Index";
@@ -10,37 +10,37 @@
 <br />
 <br />
 
-
-<form action="Home/ListaViewData" method="post">
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{
     <fieldset>
         <legend>Informações de Pessoas - Utilizando ViewData</legend>
     </fieldset>
 
     <div>
-        <label for="ID">Código</label>
+        @Html.LabelFor(x => x.ID)
 
     </div>
     <div>
-        <input type="number" value="@ViewData["ID"]" name="ID" />
+        @Html.EditorFor(x => x.ID)
     </div>
     <div>
-        <label for="Name">Name</label>
+        @Html.LabelFor(x => x.Name)
 
     </div>
     <div>
-        <input type="text" value="@ViewData["Name"]" name="Name" />
+        @Html.EditorFor(x => x.Name)
     </div>
     <div>
-        <label for="Type">Type</label>
+        @Html.LabelFor(x => x.Type)
 
     </div>
     <div>
-        <input type="text" value="@ViewData["Type"]" name="Type" />
+        @Html.EditorFor(x => x.Type)
     </div>
 
     <p><input type="submit" value="Enviar" /></p>
+}
 
-</form>
 
 <br />
 <br />

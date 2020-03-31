@@ -175,6 +175,7 @@
     <Content Include="Views\Contatos\ListaViewBag.cshtml" />
     <Content Include="Views\Contatos\Index.cshtml" />
     <Content Include="Views\Contatos\ListagemTipada.cshtml" />
+    <Content Include="Views\Home\Lista.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
