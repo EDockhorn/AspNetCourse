@@ -1,4 +1,4 @@
-﻿@model Introducao.Models.Pessoa
+﻿
 
 @{
     ViewBag.Title = "Index";
@@ -11,9 +11,9 @@
 <br />
 
 
-<form action="Home/Lista" method="post">
+<form action="Home/ListaViewData" method="post">
     <fieldset>
-        <legend>Informações de Pessoas</legend>
+        <legend>Informações de Pessoas - Utilizando ViewData</legend>
     </fieldset>
 
     <div>
@@ -21,23 +21,27 @@
 
     </div>
     <div>
-        <input type="number" value="@Model.ID" name="ID" />
+        <input type="number" value="@ViewData["ID"]" name="ID" />
     </div>
     <div>
         <label for="Name">Name</label>
 
     </div>
     <div>
-        <input type="text" value="@Model.Name" name="Name" />
+        <input type="text" value="@ViewData["Name"]" name="Name" />
     </div>
     <div>
         <label for="Type">Type</label>
 
     </div>
     <div>
-        <input type="text" value="@Model.Type" name="Type" />
+        <input type="text" value="@ViewData["Type"]" name="Type" />
     </div>
 
     <p><input type="submit" value="Enviar" /></p>
 
 </form>
+
+<br />
+<br />
+
