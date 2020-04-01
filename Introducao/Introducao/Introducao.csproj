@@ -123,11 +123,13 @@
     <Compile Include="Controllers\ContatosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Contatos.cs" />
     <Compile Include="Models\Pessoa.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +178,8 @@
     <Content Include="Views\Contatos\Index.cshtml" />
     <Content Include="Views\Contatos\ListagemTipada.cshtml" />
     <Content Include="Views\Home\Lista.cshtml" />
+    <Content Include="Views\Users\Resultado.cshtml" />
+    <Content Include="Views\Users\Usuario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

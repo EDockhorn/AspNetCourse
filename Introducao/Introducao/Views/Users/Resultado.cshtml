@@ -1,0 +1,69 @@
+﻿@model Introducao.Models.User
+@{
+    ViewBag.Title = "Resultado Usuários";
+}
+
+<h2>Listar Dados Usuários</h2>
+
+<fieldset>
+    <legend>Dados do Usuário</legend>
+
+    <div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.Name)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Name)
+    </div>
+
+    @*<div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.Observations)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Observations)
+    </div>
+
+    <div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.YearsOld)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.YearsOld)
+    </div>
+
+    <div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.Email)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Email)
+    </div>
+
+    <div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.Login)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Login)
+    </div>
+
+    <div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.Password)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Password)
+    </div>
+
+    <div class="editor-label">
+
+        @Html.DisplayNameFor(x => x.ConfirmPassword)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.ConfirmPassword)
+    </div>
+
+    @Html.ActionLink("Voltar", "Usuario")*@
+</fieldset>
+

@@ -1,5 +1,6 @@
 ﻿@model Introducao.Models.Pessoa
 
+
 @{
     ViewBag.Title = "Index";
 }
@@ -7,39 +8,43 @@
 <h2>Curso de ASP MVC</h2>
 <p>Curso ASP NET - Johnny Erick Dockhorn</p>
 
+
+
+
 <br />
 <br />
 
 @using (Html.BeginForm("Lista", "Home", FormMethod.Post))
-{
-    <fieldset>
-        <legend>Informações de Pessoas - Utilizando ViewData</legend>
-    </fieldset>
+    {
+        <fieldset>
+            <legend>Informações de Pessoas - Utilizando ViewData</legend>
+        </fieldset>
 
-    <div>
-        @Html.LabelFor(x => x.ID)
+        <div>
+            @Html.LabelFor(x => x.ID)
 
-    </div>
-    <div>
-        @Html.EditorFor(x => x.ID)
-    </div>
-    <div>
-        @Html.LabelFor(x => x.Name)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.ID)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Name)
 
-    </div>
-    <div>
-        @Html.EditorFor(x => x.Name)
-    </div>
-    <div>
-        @Html.LabelFor(x => x.Type)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Name)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Type)
 
-    </div>
-    <div>
-        @Html.EditorFor(x => x.Type)
-    </div>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Type)
+        </div>
 
-    <p><input type="submit" value="Enviar" /></p>
-}
+        <p><input type="submit" value="Enviar" /></p>
+
+    }
 
 
 <br />
