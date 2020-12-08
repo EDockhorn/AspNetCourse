@@ -171,7 +171,6 @@
     <Content Include="Views\Home\Google.cshtml" />
     <Content Include="Views\Home\Adm.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Store\Loja.cshtml" />
     <Content Include="Views\Home\ListaViewBag.cshtml" />
     <Content Include="Views\Home\ListaViewData.cshtml" />
     <Content Include="Views\Contatos\ListaViewBag.cshtml" />
@@ -180,6 +179,7 @@
     <Content Include="Views\Home\Lista.cshtml" />
     <Content Include="Views\Users\Resultado.cshtml" />
     <Content Include="Views\Users\Usuario.cshtml" />
+    <Content Include="Views\Store\Loja.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
