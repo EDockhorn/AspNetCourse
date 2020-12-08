@@ -15,7 +15,7 @@ namespace Introducao.Controllers
             var contatos = new Contatos();
             ViewBag.ID = 1;
             ViewBag.Name = "Geisa";
-            ViewBag.Type = "TETSE";
+            ViewBag.Type = "TESTE";
 
 
             return View(contatos);

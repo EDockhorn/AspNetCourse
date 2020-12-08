@@ -75,10 +75,7 @@ namespace Introducao.Controllers
         [HttpPost]
         public ActionResult Lista(Pessoa pessoa)
         {
-
             return View(pessoa);
         }
-
-  
     }
 }
